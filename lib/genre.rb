@@ -8,8 +8,13 @@ class Genre
   end 
   
   def add_song(song)
-    song.genre 
+    song.genre(self) 
     @songs << song
+  end 
+  
+  def artists
+    
+  end 
     
   
 
