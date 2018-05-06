@@ -8,7 +8,12 @@ class Artist
   end 
   
   def add_song(song)
+    song.artist = self
     @songs << song
+  end 
+  
+  def genres 
+    @songs.map {|song| songs.genre }
   end 
   
   
